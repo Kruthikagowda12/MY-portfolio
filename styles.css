@@ -488,7 +488,8 @@ code, .mono { font-family: var(--mono); }
 }
 
 /* --- Achievements -------------------------------------------------------- */
-.split { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 2rem 2.5rem; }
+/* 16rem lets all three groups sit on one row at the main column's width. */
+.split { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 2rem 2.5rem; }
 .split .eyebrow {
   padding-bottom: .5rem;
   margin-bottom: .9rem;
@@ -496,6 +497,7 @@ code, .mono { font-family: var(--mono); }
 }
 .marked { list-style: none; margin: 0; padding: 0; display: grid; gap: .85rem; }
 .marked > li { position: relative; padding-left: 1.35rem; color: var(--ink-soft); font-size: .9375rem; }
+.marked em { font-style: italic; color: var(--ink); }
 .marked > li::before {
   content: "";
   position: absolute;

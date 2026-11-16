@@ -448,14 +448,15 @@ code, .mono { font-family: var(--mono); }
 
 /* --- Stack groups -------------------------------------------------------- */
 .groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.75rem 2.5rem; }
+.group--wide { grid-column: 1 / -1; }
 .group h3 {
-  margin: 0 0 .75rem;
-  padding-bottom: .5rem;
-  border-bottom: 1px solid var(--rule);
-  font: 500 .6875rem/1 var(--mono);
-  letter-spacing: .14em;
+  margin: 0 0 .85rem;
+  padding-bottom: .55rem;
+  border-bottom: 2px solid var(--accent);
+  font: 700 .875rem/1.2 var(--mono);
+  letter-spacing: .1em;
   text-transform: uppercase;
-  color: var(--ink-faint);
+  color: var(--accent);
 }
 
 /* --- Education ----------------------------------------------------------- */
